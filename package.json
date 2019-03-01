@@ -1,0 +1,18 @@
+{
+  "name": "jskos-geonames",
+  "version": "0.0.1",
+  "description": "Transform Geonames into JSKOS format",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jskos"
+  ],
+  "author": "Jakob Voß",
+  "license": "MIT",
+  "dependencies": {
+    "geonames-stream": "^2.2.0",
+    "request": "^2.88.0",
+    "through2": "^3.0.1"
+  }
+}
