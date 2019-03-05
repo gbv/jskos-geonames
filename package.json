@@ -1,12 +1,13 @@
 {
   "name": "jskos-geonames",
   "version": "0.0.1",
-  "description": "Transform Geonames into JSKOS format",
+  "description": "Convert Geonames into JSKOS format",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
-    "jskos"
+    "jskos",
+    "geonames"
   ],
   "author": "Jakob Voß",
   "license": "MIT",
@@ -14,5 +15,9 @@
     "geonames-stream": "^2.2.0",
     "request": "^2.88.0",
     "through2": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
   }
 }
