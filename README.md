@@ -8,7 +8,7 @@ This script converts [GeoNames data dumps](https://www.geonames.org/export/) int
 
 ~~~
 git clone https://github.com/gbv/jskos-geonames.git
-cd jskos-server
+cd jskos-geonames
 npm install
 ~~~
 
