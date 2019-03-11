@@ -15,13 +15,24 @@ npm install
 ## Usage
 
 GeoNames dumps are expected to be in directory `dump`.
+To download all country files:
 
-For instance convert the country file of New Zealand:
+~~~
+cd dump
+./download.sh
+~~~
+
+Alternatively download an individual file by hand, e.g.:
 
 ~~~
 cd dump
 wget -N http://download.geonames.org/export/dump/NZ.zip
-../geonames.js NZ.zip > NZ.ndjson
+~~~
+
+To convert an individual file:
+
+~~~
+./geonames.js dump/NZ.zip > dump/NZ.ndjson
 ~~~
 
 By default the converted file will include:
