@@ -24,6 +24,17 @@ wget -N http://download.geonames.org/export/dump/NZ.zip
 ../geonames.js NZ.zip > NZ.ndjson
 ~~~
 
+By default the converted file will include:
+
+* `uri`
+* `prefLabel` (with language code `en`)
+* `altLabel` (with language code `und`)
+* `location` (as Point)
+* `type` (including types from GeoNames ontology)
+* `modified`
+
+To include hierarchy data, pass file `hierarchy.csv` as second argument.
+
 ## TODO
 
 * Include language codes of alternative labels
