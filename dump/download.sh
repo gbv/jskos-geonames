@@ -1,5 +1,5 @@
 #!/bin/bash
-#Dieses Skript lädt die ZIP-Dateien der GeoNames-Länder herunter und speichert #sie, die Extra-Dateien hierarchie.zip und no-country.zip wurden hinzugefügt.
+#Dieses Skript lädt die ZIP-Dateien der GeoNames-Länder herunter und speichert sie, die Extra-Dateien hierarchie.zip und no-country.zip wurden hinzugefügt.
 
 curl -s http://download.geonames.org/export/dump/ | grep -o '[A-Z][A-Z]\.zip' > files.txt
 echo hierarchy.zip >> files.txt
