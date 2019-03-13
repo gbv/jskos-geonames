@@ -18,4 +18,5 @@ yarn-error.log*
 package-lock.json
 
 # dump directory
-dump/
+dump/*
+!dump/*.sh
