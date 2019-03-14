@@ -5,6 +5,7 @@ grep -o '[A-Z][A-Z]' files.txt > languagecodes.txt
 
 while IFS='' read -r code || [[ -n "$code" ]]; do
     ../geonames.js $code.zip hierarchy.sh > $code.ndjson
+	jskos-validate $code.ndjson
 	echo $code.ndjson
 done < "languagecodes.txt"
 
